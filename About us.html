@@ -95,5 +95,32 @@
         </div>
     </div>
     </div>
+   
+
+     <audio id="music" src="zairzest\music.mp3"></audio>
+    <div class="container">
+        <div id="play-btn" class="music-btn">
+             <i class="fa-solid fa-play"></i>
+        </div>
+    </div>
+    </footer>
+
+    <script>
+    const music=document.getElementById('music');
+    const icon=document.querySelector('i');
+    const musicbtn=document.getElementById('play-btn');
+    musicbtn.addEventListener('click', () => {
+        if(music.paused){
+            music.play();
+            musicbtn.innerHTML='<i class="fa-solid fa-pause"></i>'
+        }else{
+            music.pause();
+            musicbtn.innerHTML='<i class="fa-solid fa-play"></i>'
+        }
+    })
+ AOS.init({
+    once: true,
+ });
+</script>
 </body>
 </html>
