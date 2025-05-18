@@ -1,0 +1,993 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+}
+
+.navbar{
+    height: 79.12px;
+    size: 35.2px;
+    background-color: #111111;
+    color: white;
+    align-items: center;
+    display: flex;
+    padding-left: 30px;
+}
+
+.logo{
+    height: 26px;
+    width: 285px;
+}
+
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 81px; 
+  width: 395px;
+  height: 23px;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a:hover {
+text-decoration: underline;
+}
+
+.head11{
+  color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 62px;
+    margin-top: 10px;
+    margin-bottom:20px;
+    margin-left:90px;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+}
+.container {
+  background-color: hsla(240, 90%, 15%, 0.635);
+  color: white;
+  top: 181px;
+  left:90px;
+  text-align:center;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 380px;
+  height: 569px;
+  position: absolute;
+  font-family:32px 'Times New Roman';
+  font-size: medium;
+  font-weight: 200;
+  border-radius: 8px;
+}
+.para1{
+    margin-top: 100px;
+    margin-left: 70px;
+    height: 100px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.head1{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+
+}
+/* This container is needed to position the front and back side */
+.frame1{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  top: 100px;
+  text-align:left;
+  left: 90px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.container:hover .frame1 {
+  transform: rotateY(180deg);
+}
+.frame1, .frame-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0px;
+}
+/* Style the front side (fallback if image is missing) */
+.frame1 {
+  background-color:hwb(0 14% 85%);
+  color:white;
+  text-align: center;
+  padding: 20px;
+  width: 380px;
+  height: 569px;
+  top: 0px;
+  left: 0px;
+  border-radius: 8px;
+}
+
+
+#card1{
+  margin:8px;
+  height: 326px;
+  width:284px ;
+  left: 130px;
+  top:302px;
+}
+.frame-container1{ 
+  background-color: hsla(240, 90%, 15%, 0.635);
+  color: white;
+  top: 181px;
+  left:568px;
+  text-align:center;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 380px;
+  height: 569px;
+  position: absolute;
+  font-family:32px 'Times New Roman';
+  font-size: medium;
+  font-weight: 200;
+  border-radius: 8px;
+}
+.para2{
+    margin-top: 100px;
+    margin-left: 70px;
+    height: 100px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.head1{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+.frame2{
+  position: relative;
+  width: 380px;
+  height: 569px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  top: 0px;
+  text-align:left;
+  left: 560px;
+  background-color:hwb(0 14% 85%);
+  color: white;
+  border-radius: 8px;
+  border:1px;
+  padding: 8px;
+  gap: 8px;
+}
+.frame-container1:hover .frame2 {
+  transform: rotateY(180deg);
+}
+.frame2, .frame-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0px;
+}
+#card2{
+  margin:8px;
+  height: 326px;
+  width:284px ;
+  left: 130px;
+  top:302px;
+}
+.frame-container2{ 
+  background-color: hsla(240, 90%, 15%, 0.635);
+  color: white;
+  top: 181px;
+  left:1040px;
+  text-align:center;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 380px;
+  height: 569px;
+  position: absolute;
+  font-family:32px 'Times New Roman';
+  font-size: medium;
+  font-weight: 200;
+  border-radius: 8px;
+}
+.para3{
+    margin-top: 100px;
+    margin-left: 70px;
+    height: 100px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.head1{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+.frame-container2:hover .frame3{
+  transform: rotateY(180deg);
+}
+.frame3, .frame-back3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0px;
+}
+.frame3{
+    width: 380px;
+    height: 569px;
+    background-color:hwb(0 14% 85%);
+    color: white;
+    position: relative;
+    top:-200px;
+    left:0px;
+    border-radius: 8px;
+    border:1px;
+    padding: 8px;;
+    gap: 8px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    text-align: left;
+}
+#card3{
+  margin:8px;
+  height: 326px;
+  width:284px ;
+  left: 130px;
+  top:302px;
+}
+.frame-container3{ 
+  background-color: hsla(240, 90%, 15%, 0.635);
+  color: white;
+  top: 810px;
+  left:90px;
+  text-align:center;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 380px;
+  height: 569px;
+  position: absolute;
+  font-family:32px 'Times New Roman';
+  font-size: medium;
+  font-weight: 200;
+  border-radius: 8px;
+}
+.para4{
+    margin-top: 100px;
+    margin-left: 70px;
+    height: 100px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.head1{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+.frame-container3:hover .frame4{
+  transform: rotateY(180deg);
+}
+.frame4, .frame-back4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0px;
+}
+.frame4{
+    width: 380px;
+    height: 569px;
+    background-color:hwb(0 14% 85%);
+    color: white;
+    position: relative;
+    top:-200px;
+    left:0px;
+    border-radius: 8px;
+    border:1px;
+    padding: 8px;;
+    gap: 8px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    text-align: left;
+}
+#card4{
+  margin:8px;
+  height: 326px;
+  width:284px ;
+  left: 130px;
+  top:302px;
+}
+.frame-container4{ 
+  background-color: hsla(240, 90%, 15%, 0.635);
+  color: white;
+  top: 810px;
+  left:568px;
+  text-align:center;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 380px;
+  height: 569px;
+  position: absolute;
+  font-family:32px 'Times New Roman';
+  font-size: medium;
+  font-weight: 200;
+  border-radius: 8px;
+}
+.para5{
+    margin-top: 100px;
+    margin-left: 70px;
+    height: 100px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.head1{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+.frame-container4:hover .frame5{
+  transform: rotateY(180deg);
+}
+.frame5, .frame-back5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0px;
+}
+.frame5{
+    width: 380px;
+    height: 569px;
+    background-color:hwb(0 14% 85%);
+    color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-radius: 8px;
+    border:1px;
+    padding: 8px;;
+    gap: 8px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    text-align: left;
+}
+#card5{
+  margin:8px;
+  height: 326px;
+  width:284px ;
+  left:130px;
+  top:302px;
+}
+*{
+   margin:0;
+  padding:0;
+}
+html,body{
+  width:100%;
+  height: 100;
+  box-sizing: border-box;
+}
+ .foot {
+    background-color: #1a1a1a;
+    position: absolute;
+    height: 100px;
+    width: 1550px;
+    top: 1390px;
+}
+    .footer{
+          background-color: #1a1a1a;
+    color: #fff;
+    padding: 5rem 3.5rem;
+}
+.top-footer {
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 350px;
+}
+.middle-footer {
+    align-items: center;
+    background: #0000;
+    display: flex
+;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.middle-footer-text {
+    background: #0000;
+    width: 506px;
+}
+.middle-footer-icons {
+    align-items: center;
+    background-color: #38ccff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex
+;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+    
+}
+.middle-footer-icon {
+    gap: 1.5rem;
+}
+.bottom-footer, .middle-footer-icon {
+    align-items: center;
+    background: #0000;
+    display: flex
+;
+}
+.bottom-footer {
+    justify-content: space-between;
+}
+.bottom-footer-text {
+    background: #0000;
+    font-size: small;
+    width: 406px;
+}
+.bottom-footer-icon {
+    align-items: center;
+    background: #0000;
+    display: flex
+;
+    gap: 1rem;
+}
+.bottom-footer-icons {
+    background: #0000;
+}
+h5{
+    color: white;
+    margin-left: 70px;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+}
+
+.navbar1{
+    height: 79.12px;
+    size: 35.2px;
+    background-color: #111111;
+    color: white;
+    align-items: center;
+    display: flex;
+    padding-left: 30px;
+    top: 1800px ;
+    position: absolute;
+    width: 100%;
+}
+
+.logo{
+    height: 26px;
+    width: 285px;
+}
+
+.nav-links1 {
+  margin-left: auto;
+  display: flex;
+  gap: 81px; 
+  width: 395px;
+  height: 23px;
+  align-items: center;
+  padding-right: 30px;
+  justify-content;
+}
+
+.nav-links1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links1 a:hover {
+  text-decoration: underline;
+}
+.head2{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 62px;
+  margin-top: 10px;
+  margin-bottom:20px;
+  margin-left: 90px;
+  font-style: normal;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: absolute;
+    top: 1900px;
+}
+.frame-container01{ 
+  background-color: hsla(240, 90%, 15%, 0.635);
+  color: white;
+  top: 2050px;
+  left:90px;
+  text-align:center;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 380px;
+  height: 569px;
+  position: absolute;
+  font-family:32px 'Times New Roman';
+  font-size: medium;
+  font-weight: 200;
+  border-radius: 8px;
+}
+.para01{
+    margin-top: 100px;
+    margin-left: 70px;
+    height: 100px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.head1{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+.frame-container01:hover .container1{
+  transform: rotateY(180deg);
+}
+.container1, .container-back1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0px;
+}
+.container1{
+    width: 380px;
+    height: 569px;
+    background-color:hwb(0 14% 85%);
+    color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-radius: 8px;
+    border:1px;
+    padding: 8px;;
+    gap: 8px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    text-align: left;
+}
+#box1{
+  margin:8px;
+  height: 326px;
+  width:284px ;
+  left: 130px;
+  top:302px;
+}
+.frame-container02{ 
+  background-color: hsla(240, 90%, 15%, 0.635);
+  color: white;
+  top: 2050px;
+  left:568px;
+  text-align:center;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 380px;
+  height: 569px;
+  position: absolute;
+  font-family:32px 'Times New Roman';
+  font-size: medium;
+  font-weight: 200;
+  border-radius: 8px;
+}
+.para02{
+    margin-top: 100px;
+    margin-left: 70px;
+    height: 100px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.head1{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+.frame-container02:hover .container2{
+  transform: rotateY(180deg);
+}
+.container2, .container-back2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0px;
+}
+.container2{
+    width: 380px;
+    height: 569px;
+    background-color:hwb(0 14% 85%);
+    color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-radius: 8px;
+    border:1px;
+    padding: 8px;;
+    gap: 8px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    text-align: left;
+}
+#box2{
+  margin:8px;
+  height: 326px;
+  width:284px ;
+  left: 130px;
+  top:302px;
+}
+.frame-container03{ 
+  background-color: hsla(240, 90%, 15%, 0.635);
+  color: white;
+  top: 2050px;
+  left:1040px;
+  text-align:center;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 380px;
+  height: 569px;
+  position: absolute;
+  font-family:32px 'Times New Roman';
+  font-size: medium;
+  font-weight: 200;
+  border-radius: 8px;
+}
+.para03{
+    margin-top: 100px;
+    margin-left: 70px;
+    height: 100px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.head1{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+.frame-container03:hover .container3{
+  transform: rotateY(180deg);
+}
+.container3, .container-back3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0px;
+}
+.container3{
+    width: 380px;
+    height: 569px;
+    background-color:hwb(0 14% 85%);
+    color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-radius: 8px;
+    border:1px;
+    padding: 8px;;
+    gap: 8px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    text-align: left;
+}
+#box3{
+  margin:8px;
+  height: 326px;
+  width:284px ;
+  left: 130px;
+  top:302px;
+}
+.frame-container04{ 
+  background-color: hsla(240, 90%, 15%, 0.635);
+  color: white;
+  top: 2690px;
+  left:90px;
+  text-align:center;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 380px;
+  height: 569px;
+  position: absolute;
+  font-family:32px 'Times New Roman';
+  font-size: medium;
+  font-weight: 200;
+  border-radius: 8px;
+}
+.para04{
+    margin-top: 100px;
+    margin-left: 70px;
+    height: 100px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.head1{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+.frame-container04:hover .container4{
+  transform: rotateY(180deg);
+}
+.container4, .container-back4{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0px;
+}
+.container4{
+    width: 380px;
+    height: 569px;
+    background-color:hwb(0 14% 85%);
+    color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-radius: 8px;
+    border:1px;
+    padding: 8px;;
+    gap: 8px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    text-align: left;
+}
+#box4{
+  margin:8px;
+  height: 326px;
+  width:284px ;
+  left: 130px;
+  top:302px;
+}
+.frame-container05{ 
+  background-color: hsla(240, 90%, 15%, 0.635);
+  color: white;
+  top: 2690px;
+  left:560px;
+  text-align:center;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 380px;
+  height: 569px;
+  position: absolute;
+  font-family:32px 'Times New Roman';
+  font-size: medium;
+  font-weight: 200;
+  border-radius: 8px;
+}
+.para05{
+    margin-top: 100px;
+    margin-left: 70px;
+    height: 100px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.head1{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+.frame-container05:hover .container5{
+  transform: rotateY(180deg);
+}
+.container5, .container-back5{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0px;
+}
+.container5{
+    width: 380px;
+    height: 569px;
+    background-color:hwb(0 14% 85%);
+    color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-radius: 8px;
+    border:1px;
+    padding: 8px;;
+    gap: 8px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    text-align: left;
+}
+#box5{
+  margin:8px;
+  height: 326px;
+  width:284px ;
+  left:130px;
+  top:302px;
+}
+.frame-container06{ 
+  background-color: hsla(240, 90%, 15%, 0.635);
+  color: white;
+  top: 2690px;
+  left:1040px;
+  text-align:center;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 380px;
+  height: 569px;
+  position: absolute;
+  font-family:32px 'Times New Roman';
+  font-size: medium;
+  font-weight: 200;
+  border-radius: 8px;
+}
+.para06{
+    margin-top: 100px;
+    margin-left: 70px;
+    height: 100px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.head1{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+.frame-container06:hover .container6{
+  transform: rotateY(180deg);
+}
+.container6, .container-back6{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0px;
+}
+.container6{
+    width: 380px;
+    height: 569px;
+    background-color:hwb(0 14% 85%);
+    color: white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-radius: 8px;
+    border:1px;
+    padding: 8px;;
+    gap: 8px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    text-align: left;
+}
+#box6{
+  margin:8px;
+  height: 326px;
+  width:284px ;
+  left:130px;
+  top:302px;
+}
+*{
+   margin:0;
+  padding:0;
+}
+html,body{
+  width:100%;
+  height: 100;
+  box-sizing: border-box;
+}
+ .foot1 {
+    background-color: #1a1a1a;
+    position: absolute;
+    width: 100%;
+    top: 3300px;
+}
+    .footer1{
+          background-color: #1a1a1a;
+    color: #fff;
+    padding: 5rem 3.5rem;
+}
+.top-footer1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 350px;
+}
+.middle-footer1 {
+    align-items: center;
+    background: #0000;
+    display: flex
+;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.middle-footer-text1 {
+    background: #0000;
+    width: 506px;
+}
+.middle-footer-icons1 {
+    align-items: center;
+    background-color: #38ccff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex
+;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+    
+}
+.middle-footer-icon1 {
+    gap: 1.5rem;
+}
+.bottom-footer1, .middle-footer-icon1 {
+    align-items: center;
+    background: #0000;
+    display: flex
+;
+}
+.bottom-footer1 {
+    justify-content: space-between;
+}
+.bottom-footer-text1 {
+    background: #0000;
+    font-size: small;
+    width: 406px;
+}
+.bottom-footer-icon1 {
+    align-items: center;
+    background: #0000;
+    display: flex
+;
+    gap: 1rem;
+}
+.bottom-footer-icons1 {
+    background: #0000;
+}
